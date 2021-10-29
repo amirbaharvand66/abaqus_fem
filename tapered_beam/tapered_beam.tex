@@ -83,10 +83,10 @@ The numerical model utilized in the present problem is Finite Element Method(FEM
 To satisfy the equilibrium \texttt{mnb1c.py} is combined with an iterative algorithm known as Implicit method. Here, the Newton-Raphson (NR) the Modified Newton-Raphson (MNR) are invoked. Such methods are invoked when one needs to derive the displacement from the applied load. Such methods do not depend on the increment size; however, implicit methods are computationally expensive due to the stiffness matrix factorization which is enhanced in the MNR.
 
 \subsubsection{Newton-Raphson Method}
-The pseudocode of the NR method is provided in \cref{alg:nr} and depicted in \cref{fig:nr_procedure} for two load increments. The stiffness matrix factorization is performed in each iteration within an individual increment. To solve for displacement, different methods, for instance the LU factorization (as used in the present report) can be utilized.
+The pseudocode of the NR method is provided in \cref{alg:nr} and depicted in \cref{fig:nr_procedure} for two load increments. $\boldsymbol{K}$ is stiffness matrix, $\boldsymbol{R_{int}}$ is internal force vector, $\boldsymbol{R}$ is residual force vector, $\boldsymbol{D}$ is global displacement vector, $\boldsymbol{dD}$ is displacement vector for each load increment, $\boldsymbol{P}$ is global load vector and $\boldsymbol{\Delta P}$ is load vector for each load increment. The stiffness matrix factorization is performed in each iteration within an individual increment. To solve for displacement, different methods, for instance the LU factorization (as used in the present report) can be utilized.
 
 \begin{algorithm}[ht]
-\caption{Newton-Raphson pseudocode.}
+\caption{Newton-Raphson pseudocode (B.C: Boundary Condition).}
 \begin{algorithmic} 
 \ENSURE $e = 1E-11$, $\boldsymbol{R} = 0$, $\boldsymbol{dD} = 0$,  $\boldsymbol{D} = 0$
 \FOR{Load increment ($n$)}
