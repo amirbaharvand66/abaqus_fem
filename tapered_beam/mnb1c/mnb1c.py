@@ -9,7 +9,7 @@ from functions.plot_funcs import *
 
 def mnb1c(inc:int, max_itr:int, X, IX, mprop, loads, bound, sigma_y, tapered, load_type, cross_section, save_fig:str = 'off', epsilon:float = 1e-12):
     '''
-    Material Nonlinearity Beam element one-dimensional Code
+    Material Nonlinearity Bar element one-dimensional Code
 
     Assumptions:
     - Due to only uniaxial loading, the beam element is reduced to a bar element.

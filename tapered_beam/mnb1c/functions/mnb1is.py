@@ -10,7 +10,7 @@ def mnb1is(X, IX, mprop, loads, bound, cross_section, sigma_y, tapered, neq, ne,
     R, inc, d_, p_, method, max_itr = 0, epsilon = 0):
     """
     FEM nonlinear
-    Material Nonlinearity Beam Implicit Solvers (mnbsi) including:
+    Material Nonlinearity Bar Implicit Solvers (mnbsi) including:
     1. Newton-Raphson method (NR)
     2. Modified Newton-Raphson method (MNR)
     
