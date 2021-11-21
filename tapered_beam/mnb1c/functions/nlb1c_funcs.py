@@ -13,7 +13,7 @@ def mnl_K(IX, X, mprop, sigma_y, tapered, cross_section, ne, D, K):
     sigma_y : yielding stress
     tapered: tapered beam (on/ff)
     cross_section: cross_section profile
-    ne = number of elements
+    ne : number of elements
     D : global displacement vector
     K : initial tangential stiffness matrix
     """
@@ -55,7 +55,7 @@ def mnl_int_force(IX, X, mprop, sigma_y, tapered, cross_section, ne, D, R_int):
     sigma_y : yielding stress
     tapered: tapered beam (on/ff)
     cross_section: cross_section profile
-    ne = number of elements
+    ne : number of elements
     D : global displacement vector
     R_int : internal force vector
     """

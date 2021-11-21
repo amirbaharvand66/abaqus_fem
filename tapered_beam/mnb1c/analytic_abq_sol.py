@@ -8,7 +8,7 @@ def analytic_sol(IX, mprop, loads, sigma_y, L, cross_section, nl):
     E: young's modulus
     sigma_y: yieding stress
     mprop : material properties
-    L = beam length
+    L : beam length
     cross_section: cross_section profile
     nl : number of point loads
     '''
@@ -45,10 +45,10 @@ def abq_result(file_name:str, label:str, marker:str, color:str, n:int = None):
     '''Abaqus result for constant cross-section with r = 30e-3 m
     input(s):
     file_name: Abaqus .rpt file name
-    label = plot label for legend
-    linestyle = linestyle for plot
-    marker = marker for plot
-    color = plot color
+    label : plot label for legend
+    linestyle : linestyle for plot
+    marker : marker for plot
+    color : plot color
     n: number of plastic point
     '''
     raw_data = np.genfromtxt(file_name)
