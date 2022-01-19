@@ -28,12 +28,12 @@
 \maketitle
 
 \section{Problem Statement}
- A cantilever beam, shown in \cref{fig:beam}, undergoes a point load, $F$, at its middle point in the $x$-direction. A rigid wall is located at a distance of 0.1mm in the positive direction of the $x$-axis. To solve the problem using the finite element method, the beam is divided into four elements as illustrated in \cref{fig:tapered_beam}. The numerical model consists of four bar elements with only one degree of freedom in the $x$-direction as shown in \cref{fig:beam_fem}. The problem can be summarized as 
+ A cantilever beam with a Young's modulus 210GPa and yeilding stress 200MPa, shown in \cref{fig:beam}, undergoes a point load, $F$=565486.67N, at its middle point in the $x$-direction. A rigid wall is located at a distance of 0.1mm in the positive direction of the $x$-axis. To solve the problem using the finite element method, the beam is divided into four elements as illustrated in \cref{fig:tapered_beam}. The numerical model consists of four bar elements with only one degree of freedom in the $x$-direction as shown in \cref{fig:beam_fem}. The problem can be summarized as 
  
  \begin{equation}
      \begin{aligned}
     \min \quad & \Pi\\
-    \textrm{s.t.} \quad & u_5 - 0.1e-3 = 0\\
+    \textrm{s.t.} \quad & u_5 - 0.1\text{e-3} = 0\\
     \end{aligned}
     \label{eq:problem}
 \end{equation}
